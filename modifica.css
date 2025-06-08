@@ -1,0 +1,90 @@
+/* SPAZIO PER LA NAVBAR STICKY */
+body {
+    margin: 0;
+    padding-top: 60px; /* spazio per non sovrapporsi alla navbar */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* NAVBAR STICKY */
+  .navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin: 0 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #ffcc00;
+  }
+  
+  /* CONTENITORE QUADRATO */
+  .container {
+    width: 400px;
+    height: 400px;
+    margin: 40px auto;
+    position: relative;
+    border: 2px solid black;
+  }
+  
+  /* I 4 QUADRATI */
+  .square {
+    width: 50%;
+    height: 50%;
+    float: left;
+  }
+  
+  .yellow { background-color: yellow; }
+  .green  { background-color: green; }
+  .red    { background-color: red; }
+  .blue   { background-color: blue; }
+  
+  /* CENTRO CON FOTO + PARAGRAFO */
+  .center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  .center-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .center-box p {
+    font-size: 12px;
+    margin: 0;
+  }
+  
